@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
 using UnityEngine.UI;
+using Mono.Cecil.Cil;
 
 public class Instructional_Text : MonoBehaviour
 {
+    public static Instructional_Text Instance;
     [Header("UI Elements")]
     public TextMeshProUGUI Text;
     public Button InteractionButton;
@@ -23,7 +25,7 @@ public class Instructional_Text : MonoBehaviour
 
     private void Start()
     {
-        ShowInstructional();
+        ShowInstructional(TextId);
     }
 
  
@@ -34,10 +36,13 @@ public class Instructional_Text : MonoBehaviour
         TextId = InstructionalTextID;
     }
 
-    public void ShowInstructional()
+    public void ShowInstructional(int inputID)
     {
+        if (inputID != 0)
+        {
+            inputID = TextId;
+        }
         SetDisplayText(TextId);
-
         TextId++;
     }
 
