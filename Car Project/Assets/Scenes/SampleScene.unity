@@ -821,12 +821,12 @@ GameObject:
   - component: {fileID: 914925297}
   - component: {fileID: 914925296}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Gloves Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &914925295
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1048,7 +1048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1039152546
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1202,7 +1202,9 @@ MonoBehaviour:
 
 
 '
-    Events: []
+    Events:
+      m_PersistentCalls:
+        m_Calls: []
     CanContine: 1
   - InfoText: 'First before we get to work we should prepare are selves by putting
       on a pair of gloves.
@@ -1213,8 +1215,22 @@ MonoBehaviour:
       to put on you''r gloves.
 
 '
-    Events: []
-    CanContine: 1
+    Events:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 914925294}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    CanContine: 0
   TypingSpeed: 0.04
   TextId: 0
 --- !u!1001 &1079005823

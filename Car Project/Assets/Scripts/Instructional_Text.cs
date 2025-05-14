@@ -84,19 +84,15 @@ public class Instructional_Text : MonoBehaviour
         CanContineToNextLine = true;
 
     
-        if (InstructionalText[TextId].CanContine)
+        if (InstructionalText[TextId-1].CanContine)
         {
             InteractionButton.gameObject.SetActive(true);
         }
 
-        yield return new WaitForSeconds(0.4f);
-        if (InstructionalText[TextId].Events != null)
-        {
-            foreach (var Textevent in InstructionalText[TextId].Events)
-            {
-                Textevent.Invoke();
-            }
-        }
+    
+        InstructionalText[TextId-1].Events.Invoke();
+            
+        
 
 
     }
@@ -110,7 +106,7 @@ public class InText
 {
     [TextArea(15, 20)]
     public string InfoText;
-    public List<UnityEvent> Events = new List<UnityEvent>();
+    public UnityEvent Events;
 
     public bool CanContine = false;
 
