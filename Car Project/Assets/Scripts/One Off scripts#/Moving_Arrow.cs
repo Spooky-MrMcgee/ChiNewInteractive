@@ -19,9 +19,10 @@ public class Moving_Arrow : MonoBehaviour
     private void Update()
     {
 
-        Vector3 startpos = localpos.transform.position;
-
-        transform.position = startpos + transform.up * Mathf.Sin(Time.time * Frequincy) * magnutuide;
+        var baseY = localpos.transform.position.y;
+        Ypos = Mathf.Sin(Time.deltaTime * Frequincy) * magnutuide;
+        var newY = baseY + Ypos; 
+        localpos.transform.position = new Vector3(localpos.transform.position.x, newY, localpos.transform.position.z);
     }
 
 }
