@@ -4,14 +4,22 @@ using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
 using UnityEngine.UI;
-using Mono.Cecil.Cil;
+using JetBrains.Annotations;
+using Unity.Collections;
+using System.Linq;
 
 public class Instructional_Text : MonoBehaviour
 {
     public static Instructional_Text Instance;
     [Header("UI Elements")]
     public TextMeshProUGUI Text;
+    public TextMeshProUGUI answerText1;
+    public TextMeshProUGUI answerText2;
+    public TextMeshProUGUI answerText3;    
     public Button InteractionButton;
+    public GameObject answerBox1;
+    public GameObject answerBox2;
+    public GameObject answerBox3;
 
     [Header("Info Text")]
     public List<InText> InstructionalText = new List<InText>();
@@ -25,13 +33,14 @@ public class Instructional_Text : MonoBehaviour
 
     private void Start()
     {
+        Instance = this;
         ShowInstructional(TextId);
     }
 
  
 
     //This will set up the next Buttion Id 
-    public void setButtion(int InstructionalTextID)
+    public void SetButton(int InstructionalTextID)
     {
         TextId = InstructionalTextID;
     }
@@ -40,7 +49,7 @@ public class Instructional_Text : MonoBehaviour
     {
         if (inputID != 0)
         {
-            inputID = TextId;
+            TextId = inputID;
         }
         SetDisplayText(TextId);
         TextId++;
@@ -94,11 +103,29 @@ public class Instructional_Text : MonoBehaviour
             InteractionButton.gameObject.SetActive(true);
         }
 
+        if (InstructionalText[TextId-1].DisplayAnswers)
+        {
+            for(int x = 0; x <= InstructionalText[TextId-1].AnswersToDisplay.Length; x++)
+            {
+                if (x == 0)
+                {
+                    answerBox1.SetActive(true);
+                    answerText1.text = InstructionalText[TextId-1].AnswersToDisplay[x];
+                }
+                if (x == 1)
+                {
+                    answerBox2.SetActive(true);
+                    answerText2.text = InstructionalText[TextId-1].AnswersToDisplay[x];
+                }
+                if (x == 2)
+                {
+                    answerBox3.SetActive(true);
+                    answerText3.text = InstructionalText[TextId-1].AnswersToDisplay[x];
+                }
+            }
+        }
     
         InstructionalText[TextId-1].Events.Invoke();
-            
-        
-
 
     }
 
@@ -112,7 +139,8 @@ public class InText
     [TextArea(15, 20)]
     public string InfoText;
     public UnityEvent Events;
-
     public bool CanContine = false;
+    public string[] AnswersToDisplay;
+    public bool DisplayAnswers;
 
 }
