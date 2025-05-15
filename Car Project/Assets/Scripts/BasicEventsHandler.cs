@@ -44,12 +44,22 @@ public class BasicEventsHandler : MonoBehaviour
         interactableObject.enabled = false;
     }
 
+    /*
     public void UpdateVCam(GameObject virtualCamera)
     {
         if (!virtualCamera.activeSelf)
             virtualCamera.SetActive(true);
         else if (virtualCamera.activeSelf)
             virtualCamera.SetActive(false);
+    }*/
+
+    public void NewUpdateVCam(CinemachineVirtualCamera virtualCamera)
+    {
+        if(CineCsmScript.Instance != null)
+        {
+            CineCsmScript.Instance.changeCamera(virtualCamera);
+        }
+       
     }
 
     public void PlayAnimation(Animator animator)
