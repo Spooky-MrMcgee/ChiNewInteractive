@@ -3,7 +3,77 @@ guid: f258b2aea51c5d44f8d82e81b58b9c94
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ButtonsWallMetal
+    second: {fileID: 2100000, guid: 5c7dacd880e7afb41b349a92c2a7ff12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cabinets
+    second: {fileID: 2100000, guid: 4d8b49bc542fd4f46806e3b85200bae4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cans
+    second: {fileID: 2100000, guid: 39a95792451b14f4e85507f07be971c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cardboard
+    second: {fileID: 2100000, guid: 2edf1a07b7782f34f9a3b448579290c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorCeiling
+    second: {fileID: 2100000, guid: e6a1bf5e665a0c2498bc28ddf672fa3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Electical
+    second: {fileID: 2100000, guid: 97140d4d93dc6084599c970408130a9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 832475a6e122fee479ce6a7fb5270823, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Helmet
+    second: {fileID: 2100000, guid: 449b31d200cf9db46a08a2813509fe82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lamp
+    second: {fileID: 2100000, guid: c326196571e8539489ae3055dd8daf0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlatformWall
+    second: {fileID: 2100000, guid: 7682e0551e4596f4dbabb4c4d6af9930, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Posster_f1
+    second: {fileID: 2100000, guid: 54be4fa4725a69240998d5f4efd6e6d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Posters_2
+    second: {fileID: 2100000, guid: 25816c60e2fd10d4f93785b238f0c4f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tools
+    second: {fileID: 2100000, guid: df4a8fec41565b04883a74268b14303d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WheelsSofa
+    second: {fileID: 2100000, guid: 410486e310d1e0b479462434cb91684d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
