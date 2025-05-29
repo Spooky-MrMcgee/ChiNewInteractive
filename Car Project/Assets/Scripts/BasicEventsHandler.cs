@@ -44,12 +44,38 @@ public class BasicEventsHandler : MonoBehaviour
         interactableObject.enabled = false;
     }
 
-    public void UpdateVCam(GameObject virtualCamera)
+    public void NewUpdateVCam(CinemachineVirtualCamera virtualCamera)
     {
-        if (!virtualCamera.activeSelf)
-            virtualCamera.SetActive(true);
-        else if (virtualCamera.activeSelf)
-            virtualCamera.SetActive(false);
+        if(CineCsmScript.Instance != null)
+        {
+            CineCsmScript.Instance.changeCamera(virtualCamera);
+        }
+       
+    }
+
+    public void UpdateQuestionTextEventOne(int value)
+    {
+        Debug.Log("AAA");
+        Button questionButton = Instructional_Text.Instance.answerBox1.GetComponent<Button>();
+        questionButton.onClick.RemoveAllListeners();
+        questionButton.onClick.AddListener(delegate{Instructional_Text.Instance.ShowInstructional(value);});
+        questionButton.onClick.AddListener(delegate{HideAnswers();});
+    }
+
+    public void UpdateQuestionTextEventTwo(int value)
+    {
+        Button questionButton = Instructional_Text.Instance.answerBox2.GetComponent<Button>();
+        questionButton.onClick.RemoveAllListeners();
+        questionButton.onClick.AddListener(delegate{Instructional_Text.Instance.ShowInstructional(value);});
+        questionButton.onClick.AddListener(delegate{HideAnswers();});
+    }
+
+    public void UpdateQuestionTextEventThree(int value)
+    {
+        Button questionButton = Instructional_Text.Instance.answerBox3.GetComponent<Button>();
+        questionButton.onClick.RemoveAllListeners();
+        questionButton.onClick.AddListener(delegate{Instructional_Text.Instance.ShowInstructional(value);});
+        questionButton.onClick.AddListener(delegate{HideAnswers();});
     }
 
     public void PlayAnimation(Animator animator)

@@ -4,10 +4,15 @@ using UnityEngine;
 using Cinemachine;
 
 
-public class Cine : MonoBehaviour
+public class CineCsmScript : MonoBehaviour
 {
     //Bradley Shepherd
     //14/05/2025
+
+
+    public static CineCsmScript Instance;
+
+
 
     //SET UP Istructions
 
@@ -22,6 +27,13 @@ public class Cine : MonoBehaviour
     //when seting this system up you need fill both of these public Varible's with the fist cinemachine camera you are going to be using.
     public CinemachineVirtualCamera CurrentActiveCamera;
     public CinemachineVirtualCamera MainCamera;
+
+
+
+    public void Start()
+    {
+        Instance = this;
+    }
 
 
 

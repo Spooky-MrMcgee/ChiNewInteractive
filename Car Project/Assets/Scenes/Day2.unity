@@ -301,6 +301,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &239872426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3457146068195571398, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
+  m_PrefabInstance: {fileID: 1593993126}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &244515535
 GameObject:
   m_ObjectHideFlags: 3
@@ -4221,42 +4226,16 @@ PrefabInstance:
       objectReference: {fileID: 1875372881}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.size
-      value: 18
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[0].InfoText
-      value: 'Hello and welcome to this training workshop provided to you by ChiNew
-        Interactive!
-
-        <br>
-
-        This workshop aims to run you through
-        a series of different situations you will face as part of your role, and
-        show you the specific checks required in order to successfully hand over
-        a rental vehicle without issue.
-
-        <br>
-
-        To interact with this
-        training workshop, all you need to do is read carefully through the text
-        shown here and use your mouse in order to interact with the environment in
-        response to the questions given to you.'
+      value: Welcome to day two of your train course now since the training wheels
+        are off lets start on your second day of work and see how well you do.
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[1].InfoText
-      value: 'The first and most important step in checking a vehicle is <color=yellow>to
-        ensure safety</color=yellow> occurs in the workplace.
-
-        <br>
-
-        As
-        a result, our first step should be putting on work-ready gloves before we
-        interact with the vehicle in any way.
-
-        <br>
-
-        Please click
-        on the gloves in the top right corner to get started.'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[2].InfoText
@@ -4473,6 +4452,10 @@ PrefabInstance:
       value: Yes.
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
+      propertyPath: InstructionalText.Array.data[0].CanContine
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[1].CanContine
       value: 0
       objectReference: {fileID: 0}
@@ -4634,11 +4617,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[0].Events.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[1].Events.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[2].Events.m_PersistentCalls.m_Calls.Array.size
@@ -4702,7 +4685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[0].Events.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[0].Events.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -4714,7 +4697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[1].Events.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[1].Events.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -4895,7 +4878,7 @@ PrefabInstance:
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[0].Events.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 537984120}
+      objectReference: {fileID: 239872426}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[0].Events.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -5158,7 +5141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[0].Events.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UpdateQuestionTextEventOne
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[0].Events.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -5286,7 +5269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[1].Events.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DisplayImage
+      value: set_useGUILayout
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[1].Events.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -5470,7 +5453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[0].Events.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BasicEventsHandler, Assembly-CSharp
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[0].Events.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -5482,7 +5465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[1].Events.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BasicEventsHandler, Assembly-CSharp
+      value: UnityEngine.MonoBehaviour, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[1].Events.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -5542,7 +5525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[0].Events.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[0].Events.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
@@ -5799,7 +5782,7 @@ PrefabInstance:
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[1].Events.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 1269144461}
+      objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[1].Events.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
@@ -5882,7 +5865,7 @@ PrefabInstance:
       objectReference: {fileID: 7631645954117803890}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[0].Events.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[0].Events.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -5894,7 +5877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[1].Events.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.UI.Image, UnityEngine.UI
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.data[1].Events.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -6164,6 +6147,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -7.449951
       objectReference: {fileID: 0}
+    - target: {fileID: 3457146068195571398, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4231105250635338036, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
@@ -6192,6 +6179,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5476622727854784303, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5746569833381360314, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -6206,24 +6197,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6469520418669305450, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: m_text
-      value: 'Hello and welcome to this training workshop provided to you by ChiNew
-        Interactive!
-
-
-        This workshop aims to run you through a series of
-        different situations you will face as part of your role, and show you the
-        specific checks required in order to successfully hand over a rental vehicle
-        without issue.
-
-
-        To interact with this training workshop, all you
-        need to do is read carefully through the text shown here and use your mouse
-        in order to interact with the environment in response to the questions given
-        to you.
-
-
-        Some questions will be given to you through a text-based
-        choice, others will need you to interact with the environment.'
+      value: Welcome to day two of your train course now since the training wheels
+        are off lets start on your second day of work and see how well you do.
       objectReference: {fileID: 0}
     - target: {fileID: 6469520418669305450, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: m_margin.w

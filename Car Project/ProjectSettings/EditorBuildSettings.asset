@@ -6,5 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Day1.unity
+    guid: 260641791d51a2b47b9b395cdb3546bb
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
