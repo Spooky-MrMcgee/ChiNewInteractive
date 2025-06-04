@@ -9,8 +9,11 @@ public class InteractableObject : MonoBehaviour
 {
     public UnityEvent unityEvent;
     public bool mouseDown;
+    public float timeLimit;
     public UnityEvent mouseDownEvent;
     float time;
+    bool button;
+    public Animator animator;
     private void OnMouseOver()
     {
         if (this.enabled == false)
@@ -21,14 +24,24 @@ public class InteractableObject : MonoBehaviour
             return;
 
         if (Input.GetMouseButton(0))
+        {
             time += Time.deltaTime;
+            if (!animator.GetBool("PlayAnimation"))
+                animator.SetBool("PlayAnimation", true);
+        }
         else
+        {
+            Debug.Log("Mouse button is currently not being held.");
+            if (animator.GetBool("PlayAnimation"))
+                animator.SetBool("PlayAnimation", false);
             time = 0f;
+        }
 
-        if (time >= 3f)
+        if (time >= timeLimit)
         {
             mouseDownEvent.Invoke();
             time = 0f;
+            this.gameObject.layer = 0;
             this.enabled = false;
         }
     }

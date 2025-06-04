@@ -5,7 +5,8 @@ using Cinemachine;
 using UnityEngine;
 using UnityEngine.UI;
 public class BasicEventsHandler : MonoBehaviour
-{ 
+{
+    [SerializeField] GameObject tireGauge;
     public void DisplayImage(Image image)
     {
         image.enabled = true;
@@ -55,7 +56,6 @@ public class BasicEventsHandler : MonoBehaviour
 
     public void UpdateQuestionTextEventOne(int value)
     {
-        Debug.Log("AAA");
         Button questionButton = Instructional_Text.Instance.answerBox1.GetComponent<Button>();
         questionButton.onClick.RemoveAllListeners();
         questionButton.onClick.AddListener(delegate{Instructional_Text.Instance.ShowInstructional(value);});
