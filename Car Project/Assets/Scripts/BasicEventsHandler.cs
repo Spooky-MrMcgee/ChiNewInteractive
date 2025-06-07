@@ -34,6 +34,12 @@ public class BasicEventsHandler : MonoBehaviour
         Instructional_Text.Instance.answerBox3.SetActive(false);
     }
 
+    public void HIdeInteractivetext()
+    {
+        Instructional_Text.Instance.hideInstructionalText();
+    }
+
+
     public void EnableInteractable(InteractableObject interactableObject)
     {
         interactableObject.enabled = true;
