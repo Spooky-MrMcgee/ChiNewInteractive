@@ -2035,6 +2035,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 673988767}
   m_CullTransparentMesh: 1
+--- !u!1 &679373057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4320214614279070216, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
+  m_PrefabInstance: {fileID: 1593993126}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &755985594 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3747888545272063763, guid: 58a045e706352204596f5ff4f5bb2740, type: 3}
@@ -5007,6 +5012,10 @@ PrefabInstance:
       propertyPath: HintsTextBox
       value: 
       objectReference: {fileID: 1875372881}
+    - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
+      propertyPath: InstructinalHolder
+      value: 
+      objectReference: {fileID: 679373057}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.size
       value: 21

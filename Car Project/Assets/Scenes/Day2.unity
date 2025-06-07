@@ -5008,6 +5008,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1875372881}
     - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
+      propertyPath: InstructinalHolder
+      value: 
+      objectReference: {fileID: 1593993127}
+    - target: {fileID: 1829041093205462086, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
       propertyPath: InstructionalText.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -7349,6 +7353,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1269144463}
   m_SourcePrefab: {fileID: 100100000, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
+--- !u!1 &1593993127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4320214614279070216, guid: 1c6adfc0b25295c4daec2e1653a12353, type: 3}
+  m_PrefabInstance: {fileID: 1593993126}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1598590851
 GameObject:
   m_ObjectHideFlags: 0

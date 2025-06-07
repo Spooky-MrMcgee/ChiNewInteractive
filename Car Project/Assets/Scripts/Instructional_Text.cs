@@ -16,6 +16,9 @@ public class Instructional_Text : MonoBehaviour
     private bool canSkip = false;
     private bool skip = false;
 
+    [Header("Instructional Holder")]
+    public GameObject InstructinalHolder;
+
     [Header("Questions UI")]
     public TextMeshProUGUI answerText1;
     public TextMeshProUGUI answerText2;
@@ -65,8 +68,20 @@ public class Instructional_Text : MonoBehaviour
         TextId = InstructionalTextID;
     }
 
+    public void hideInstructionalText()
+    {
+        InstructinalHolder.SetActive(false);
+    }
+
+
+
     public void ShowInstructional(int inputID)
     {
+
+        if(InstructinalHolder.activeSelf == false)
+        {
+            InstructinalHolder.SetActive(true);
+        }
         
         if(HintsButton.activeSelf == true)
         {
