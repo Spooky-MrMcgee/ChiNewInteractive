@@ -14,6 +14,11 @@ public class InteractableObject : MonoBehaviour
     float time;
     bool button;
     public Animator animator;
+
+    private void OnDisable()
+    {
+        this.gameObject.layer = 0;
+    }
     private void OnMouseOver()
     {
         if (this.enabled == false)
@@ -31,7 +36,6 @@ public class InteractableObject : MonoBehaviour
         }
         else
         {
-            Debug.Log("Mouse button is currently not being held.");
             if (animator.GetBool("PlayAnimation"))
                 animator.SetBool("PlayAnimation", false);
             time = 0f;
