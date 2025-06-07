@@ -3078,7 +3078,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Proceed
+  m_text: Close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fe96fc40ea966fd4e8be02bbafc1ee73, type: 2}
   m_sharedMaterial: {fileID: 2983753514918642459, guid: fe96fc40ea966fd4e8be02bbafc1ee73, type: 2}
@@ -6565,11 +6565,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1121471230}
-  m_Father: {fileID: 9161863297741539601}
+  m_Father: {fileID: 6773804227533036850}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -662.4437, y: -463.001}
+  m_AnchoredPosition: {x: -1.9067383, y: -463}
   m_SizeDelta: {x: 332.3624, y: 68.8353}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1942525783
@@ -11577,6 +11577,7 @@ RectTransform:
   m_Children:
   - {fileID: 3152222243842111342}
   - {fileID: 6708808140142003156}
+  - {fileID: 1942525782}
   m_Father: {fileID: 5403495963896817904}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
@@ -13386,7 +13387,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5845602288941162091}
-  - {fileID: 1942525782}
   m_Father: {fileID: 5403495963896817904}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
