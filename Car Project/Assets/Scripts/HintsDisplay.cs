@@ -13,20 +13,4 @@ public class HintsDisplay : MonoBehaviour
    
     public TextMeshProUGUI HintText;
 
-
-    public void ShowHint()
-    {
-        Instructional_Text.Instance.HintsButton.SetActive(false);
-        Instructional_Text.Instance.HintsTextBox.SetActive(true);
-        int CurrentID = Instructional_Text.Instance.TextId;
-        HintText.text = Instructional_Text.Instance.InstructionalText[CurrentID - 1].HintToDisplay;
-    }
-
-    public void HideHint()
-    {
-        Instructional_Text.Instance.HintsTextBox.SetActive(false);
-        HintText.text = "";
-    }
-
-
 }

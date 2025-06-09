@@ -28,10 +28,6 @@ public class Instructional_Text : MonoBehaviour
     public GameObject answerBox2;
     public GameObject answerBox3;
 
-    [Header("Hint UI")]
-    public GameObject HintsButton;
-    public GameObject HintsTextBox;
-
 
     [Header("Info Text")]
     public List<InText> InstructionalText = new List<InText>();
@@ -82,11 +78,6 @@ public class Instructional_Text : MonoBehaviour
         {
             InstructinalHolder.SetActive(true);
         }
-        
-        if(HintsButton.activeSelf == true)
-        {
-            HintsButton.SetActive(false);
-        }
         if (inputID != 0)
         {
             TextId = inputID;
@@ -98,10 +89,6 @@ public class Instructional_Text : MonoBehaviour
     //This is not to be used a public function it just displayes the text
     private void SetDisplayText(int InstructionalTextID)
     {
-        if (InstructionalText[InstructionalTextID].RemoveHint)
-        {
-            HintsTextBox.SetActive(false);
-        }
         InteractionButton.gameObject.SetActive(false);
         StartCoroutine(DisplayLine(InstructionalText[InstructionalTextID].InfoText));
     }
@@ -152,7 +139,7 @@ public class Instructional_Text : MonoBehaviour
             else
             {
                 Text.text += Letter;
-                yield return new WaitForSeconds(TypingSpeed);
+                yield return new WaitForSeconds(TypingSpeed * Time.deltaTime);
             }
 
 
@@ -188,8 +175,6 @@ public class Instructional_Text : MonoBehaviour
                     answerText3.text = InstructionalText[TextId-1].AnswersToDisplay[x];
                 }
             }
-
-            HintsButton.SetActive(true);
         }
     
         InstructionalText[TextId-1].Events.Invoke();
